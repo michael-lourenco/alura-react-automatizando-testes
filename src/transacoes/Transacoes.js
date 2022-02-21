@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import Transacao from './Transacao';
+import Transacao from "./Transacao";
 
 const Transacoes = ({ transacoes }) => {
     return <div data-testid="transacoes">
@@ -14,9 +14,9 @@ const Transacoes = ({ transacoes }) => {
 
 Transacoes.defaultProp = {
     transacoes: [{
-        tipo: '',
-        valor: '',
-        data: '',
+        tipo: "",
+        valor: "",
+        data: "",
     }],
 }
 

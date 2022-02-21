@@ -1,6 +1,6 @@
 {
   "conta": {
-    "saldo": 1060
+    "saldo": 990
   },
   "transacoes": [
     {
@@ -50,6 +50,78 @@
       "valor": "10",
       "data": "20/02/2022",
       "id": 8
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "21/02/2022",
+      "id": 9
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "21/02/2022",
+      "id": 10
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "21/02/2022",
+      "id": 11
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "21/02/2022",
+      "id": 12
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "21/02/2022",
+      "id": 13
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "21/02/2022",
+      "id": 14
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "21/02/2022",
+      "id": 15
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "21/02/2022",
+      "id": 16
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "21/02/2022",
+      "id": 17
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "21/02/2022",
+      "id": 18
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "21/02/2022",
+      "id": 19
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "21/02/2022",
+      "id": 20
     }
   ]
 }

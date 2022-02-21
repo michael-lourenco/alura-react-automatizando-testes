@@ -1,12 +1,12 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
+import React from "react";
+import { render, screen } from "@testing-library/react";
 import api from "./api";
-import App from './App';
+import App from "./App";
 
-jest.mock('./api');
+jest.mock("./api");
 
-describe('Requisições para a API', () => {
-    it('Exibir lista de tansações através da API', async () => {
+describe("Requisições para a API", () => {
+    it("Exibir lista de tansações através da API", async () => {
         api.listaTransacoes.mockResolvedValue([{
             "valor": "10",
             "transacao": "saque",
@@ -23,8 +23,8 @@ describe('Requisições para a API', () => {
 
         render(<App />);
 
-        expect(await screen.findByText('saque')).toBeInTheDocument();
+        expect(await screen.findByText("saque")).toBeInTheDocument();
 
-        expect(screen.getByTestId('transacoes').children.length).toBe(2);
+        expect(screen.getByTestId("transacoes").children.length).toBe(2);
     })
 })

@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import './Conta.css'
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+import "./Conta.css"
 
 const Conta = ({ saldo, realizarTransacao }) => {
-    const [valores, atualizarValores] = useState({transacao: '', valor: 0});
+    const [valores, atualizarValores] = useState({transacao: "", valor: 0});
 
     function handleChange(e) {
         const { name, value } = e.target;
@@ -14,7 +14,7 @@ const Conta = ({ saldo, realizarTransacao }) => {
 
     function handleSubmit(e) {
         e.preventDefault();
-        const dataTransacao = new Date().toLocaleDateString('pt-br');
+        const dataTransacao = new Date().toLocaleDateString("pt-br");
         realizarTransacao({...valores, data: dataTransacao});
     }
 
@@ -31,7 +31,7 @@ const Conta = ({ saldo, realizarTransacao }) => {
                         value="deposito"
                         onChange={handleChange}
                         data-testid="transacao"
-                        checked={valores.transacao === 'deposito'}   
+                        checked={valores.transacao === "deposito"}   
                     />
                 </label>
             </div>
@@ -45,7 +45,7 @@ const Conta = ({ saldo, realizarTransacao }) => {
                         value="saque"
                         data-testid="transacao"
                         onChange={handleChange}
-                        checked={valores.transacao === 'saque'}     
+                        checked={valores.transacao === "saque"}     
                     />
                 </label>
             </div>
@@ -60,7 +60,7 @@ const Conta = ({ saldo, realizarTransacao }) => {
             ></input>
 
             <div>
-                <button type='submit'>
+                <button type="submit">
                     Realizar operação
                 </button>
             </div>

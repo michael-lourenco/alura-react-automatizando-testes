@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import './Transacao.css'
+import "./Transacao.css"
 
 
 function Transacao({ data, tipo, valor }) {
@@ -15,9 +15,9 @@ function Transacao({ data, tipo, valor }) {
 };
 
 Transacao.defaultProps = {
-    tipo: '',
-    valor: '0',
-    data: '',
+    tipo: "",
+    valor: "0",
+    data: "",
 }
 
 Transacao.propTypes = {
