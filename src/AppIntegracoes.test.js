@@ -8,7 +8,7 @@ jest.mock('./api');
 describe('Requisições para a API', () => {
     it('Exibir lista de tansações através da API', async () => {
         api.listaTransacoes.mockResolvedValue([{
-            "valor": 10,
+            "valor": "10",
             "transacao": "saque",
             "data": "10/08/2020",
             "id": 1
@@ -22,7 +22,9 @@ describe('Requisições para a API', () => {
         ]);
 
         render(<App />);
-        
-        expect(screen.getByTestId('transacoes').childen.length).toBe(2);
+
+        expect(await screen.findByText('saque')).toBeInTheDocument();
+
+        expect(screen.getByTestId('transacoes').children.length).toBe(2);
     })
 })
